@@ -1,0 +1,30 @@
+<!-- Written with Janus VR.  URL: file:///C:/Images/posterity/JanusVR/JanusVR_Win32/workspace/vchat-world14/TheCompass.html -->
+<html>
+<head>
+<title>V-Chat: The Compass</title>
+</head>
+<body>
+<FireBoxRoom>
+<Assets>
+<AssetImage id="world14sky" src="world14sky.png" />
+<AssetSound id="song" src="song.wav" />
+<AssetSound id="song2" src="song2.wav" />
+<AssetSound id="enter" src="enter.wav" />
+<AssetObject id="Compass_obj" src="TheCompass.obj" mtl="TheCompass.mtl" />
+<AssetObject id="Bird_obj" src="World14Bird2.obj" mtl="World14Bird2.mtl" />
+<AssetObject id="Pyramid_obj" src="CompassPyramid.obj" mtl="CompassPyramid.mtl" />
+</Assets>
+<Room
+pos="0.43 0.04 -6.000000"
+skybox_left_id="world14sky" skybox_right_id="world14sky" skybox_front_id="world14sky" skybox_back_id="world14sky" skybox_up_id="world14sky" skybox_down_id="world14sky"
+fog="true" fog_mode="linear" fog_density="0.1" fog_col="0.85 0.85 0.85" fog_start="25" fog_end="55"
+>
+<Object id="Compass_obj" collision_id="Compass_obj" pos="0 -11 0" scale="8 8 8" />
+<Object id="Bird_obj" pos="0 10 0" scale="1 1 1" rotate_axis="0 -1 0" rotate_deg_per_sec="25"/>
+<Object id="Pyramid_obj" pos="0 10 0" scale="2 2 2" rotate_axis="0 1 0" rotate_deg_per_sec="1"/>
+<Sound id="song" rect="-10 10 10 -20" loop="true"/>
+<Sound id="enter" rect="0 0 0 0" loop="false" play_once="false"/>
+</Room>
+</FireBoxRoom>
+</body>
+</html>
