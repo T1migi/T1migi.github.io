@@ -9,7 +9,7 @@ Ks 1.000000 1.000000 1.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd ..\..\3DRipperDX\rips\Textures\3cu_ba.dds
+map_Kd 3cu_ba.png
 
 newmtl 3cu_hba
 Ns 98.039216
@@ -129,7 +129,7 @@ Ks 1.000000 1.000000 1.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd ..\..\3DRipperDX\rips\Textures\3cu_rfe.dds
+map_Kd 3cu_rfe.png
 
 newmtl 3cu_rfi
 Ns 98.039216
