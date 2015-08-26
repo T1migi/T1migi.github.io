@@ -19,7 +19,7 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd ..\..\3DRipperDX\rips\Textures\3cu_fr.dds
+map_Kd 3cu_fr.png
 
 newmtl 3cu_hl
 Ns 98.039216
