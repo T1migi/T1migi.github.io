@@ -14,12 +14,12 @@ map_Kd 3cu_du.png
 newmtl 3cu_fr
 Ns 98.039216
 Ka 0.000000 0.000000 0.000000
-Kd 0.558431 0.558431 0.558431
-Ks 1.000000 1.000000 1.000000
+Kd 0.698039 0.698039 0.698039
+Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
-illum 2
-map_Kd 3cu_fr.png
+illum 1
+map_Kd ..\..\3DRipperDX\rips\Textures\3cu_fr.dds
 
 newmtl 3cu_hl
 Ns 98.039216
