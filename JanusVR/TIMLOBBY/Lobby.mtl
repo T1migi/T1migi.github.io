@@ -1,5 +1,15 @@
-# Blender MTL File: 'Lobby6.blend'
-# Material Count: 6
+# Blender MTL File: 'Lobby7.blend'
+# Material Count: 8
+
+newmtl Material
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd highway.png
 
 newmtl Material.001
 Ns 96.078431
@@ -30,6 +40,16 @@ Ni 1.000000
 d 1.000000
 illum 2
 map_Kd Wall1.png
+
+newmtl Material.004
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd highway.png
 
 newmtl Material.005
 Ns 96.078431
