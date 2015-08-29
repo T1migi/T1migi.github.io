@@ -13,7 +13,13 @@
 <AssetImage id="skytop" src="skytop.png" />
 <AssetImage id="skybottom" src="skybottom.png" />
 
+<AssetImage id="vchat14thumb" src="vchat14thumb.png" />
+<AssetShader id="shader_tree" vertex_src="http://www.dgp.toronto.edu/~mccrae/projects/firebox/home/tree_vertex.txt" />
+
 <AssetObject id="Lobby_obj" src="Lobby.obj" mtl="Lobby.mtl" />
+<AssetObject id="Tree_obj" src="tinctree.obj" mtl="tinctree.mtl" />
+<AssetObject id="RotarySign" src="RotarySign.obj" mtl="RotarySign.mtl" />
+
 </Assets>
 <Room
 pos="8.65 4.76 2.61" fwd="-1 0 0"
@@ -21,7 +27,22 @@ skybox_left_id="skyleft" skybox_right_id="skyright" skybox_front_id="skymid" sky
 >
 <Object id="Lobby_obj" collision_id="Lobby_obj" pos="0 0 0" scale="5 5 5" />
 
+<Object id="Tree_obj" collision_id="Tree_obj" pos="-7.5 4.3 24" scale="0.7 0.7 0.7" shader_id="shader_tree" />
+<Object id="Tree_obj" collision_id="Tree_obj" pos="12 4.5 17" scale="0.5 0.5 0.5" shader_id="shader_tree" />
+<Object id="Tree_obj" collision_id="Tree_obj" pos="14 1 16" scale="0.6 0.6 0.6" shader_id="shader_tree" />
+<Object id="Tree_obj" collision_id="Tree_obj" pos="20 4.5 20" scale="0.5 0.4 0.5" shader_id="shader_tree" />
+<Object id="Tree_obj" collision_id="Tree_obj" pos="20 2 19" scale="0.4 0.3 0.4" shader_id="shader_tree" />
+<Object id="Tree_obj" collision_id="Tree_obj" pos="23 2 25" scale="0.4 0.3 0.4" shader_id="shader_tree" />
+<Object id="Tree_obj" collision_id="Tree_obj" pos="-8 1 28" scale="0.6 0.6 0.6" shader_id="shader_tree" />
+<Object id="Tree_obj" collision_id="Tree_obj" pos="-12 4.3 26" scale="0.6 0.6 0.6" shader_id="shader_tree" />
+
+<Object id="RotarySign" pos="-29.200001 8.700000 2.600000" scale="3.00000 3.00000 3.00000" rotate_deg_per_sec="10.000" fwd="1 0 0" />
+<Object id="RotarySign" pos="-29.200001 11.700000 2.600000" scale="4.00000 3.00000 4.00000" rotate_deg_per_sec="15.000" fwd="0.6 0 0"/>
+<Object id="RotarySign" pos="-29.200001 14.700000 2.600000" scale="3.00000 3.00000 3.00000" rotate_deg_per_sec="20.000" fwd="0.4 0 0"/>
+<Object id="RotarySign" pos="-29.200001 17.700000 2.600000" scale="4.00000 3.00000 4.00000" rotate_deg_per_sec="10.000" fwd="0.2 0 0"/>
+
 <Link pos="9 4.76 2.6" fwd="-1 0 0" url="http://www.dgp.toronto.edu/~mccrae/projects/firebox/home2/home.html" col="255 0 0" scale="4.5 3.5 1" title="Home" />
+<Link pos="-15.300 4.800 -1.400" fwd="-1 0 0.5" scale="2.5 2.5 1" url="http://t1migi.github.io/JanusVR/vchat-world14/TheCompass.html" thumb_id="vchat14thumb"/>
 
 </Room>
 </FireBoxRoom>

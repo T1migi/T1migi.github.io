@@ -1,0 +1,27 @@
+<!-- Written with Janus VR.  URL: file:///C:/Images/posterity/JanusVR/JanusVR_Win32/workspace/vchat-world14/TheCompass.html -->
+<html>
+<head>
+<title>T-Inc</title>
+</head>
+<body>
+<FireBoxRoom>
+<Assets>
+<AssetImage id="skyside" src="SkySide.png" />
+
+<AssetImage id="vchat14thumb" src="vchat14thumb.png" />
+<AssetShader id="shader_tree" vertex_src="http://www.dgp.toronto.edu/~mccrae/projects/firebox/home/tree_vertex.txt" />
+
+<AssetObject id="CitadelIsland" src="Citadel.obj" mtl="Citadel.mtl" />
+
+</Assets>
+<Room
+pos="5 0 5" fwd="-1 0 0"
+skybox_left_id="skyside" skybox_right_id="skyside" skybox_front_id="skyside" skybox_back_id="skyside" skybox_up_id="skyside" skybox_down_id="skyside"
+fog="true" fog_mode="linear" fog_density="0.1" fog_col="0.50196 0.70588 0.83137" fog_start="50" fog_end="100"
+>
+<Object id="CitadelIsland" collision_id="CitadelIsland" pos="0 0 0" scale="100 100 100" />
+
+</Room>
+</FireBoxRoom>
+</body>
+</html>
