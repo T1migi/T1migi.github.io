@@ -1,0 +1,36 @@
+<!-- Written with Janus VR.  URL: file:///C:/Images/posterity/JanusVR/JanusVR_Win32/workspace/vchat-world14/TheCompass.html -->
+<html>
+<head>
+<title>T-Inc</title>
+</head>
+<body>
+<FireBoxRoom>
+<Assets>
+<AssetImage id="sky1" src="DagDarkSwampSkyTop.png" />
+<AssetSound id="Music-Rain" src="Raining.mp3" />
+
+<AssetImage id="thumb" src="thumb.png" />
+<AssetShader id="shader_tree" vertex_src="http://www.dgp.toronto.edu/~mccrae/projects/firebox/home/tree_vertex.txt" />
+
+<AssetObject id="Ship_obj" src="Ship1.obj" mtl="Ship1.mtl" />
+<AssetObject id="Sea_obj" src="Shipsea.obj" mtl="Shipsea.mtl" />
+<!-- <AssetObject id="ShipSkyboxDisc_obj" src="ShipSkyboxDisc.obj" mtl="ShipSkyboxDisc.mtl" /> -->
+
+</Assets>
+<Room
+pos="-7.30 4.92 2.76" fwd="1 0 0"
+skybox_left_id="sky1" skybox_right_id="sky1" skybox_front_id="sky1" skybox_back_id="sky1" skybox_up_id="sky1" skybox_down_id="sky1"
+fog="true" fog_mode="linear" fog_density="0.1" fog_col="0.16863 0.16863 0.16863" fog_start="75" fog_end="350"
+>
+
+<Object id="Ship_obj" collision_id="Ship_obj" pos="-5 0 1.5" scale="15 15 15" cull_face="none" blend_dest="constant_color" />
+<Object id="Sea_obj" pos="-5 -3495 1.5" scale="3500 3500 3500" cull_face="none" blend_dest="constant_color" rotate_axis="0 0 1" rotate_deg_per_sec="0.5" />
+<!-- <Object id="ShipSkyboxDisc_obj" lighting="false" pos="0 50 5" scale="60 70 60" cull_face="none" blend_dest="constant_color" rotate_axis="0 1 0" rotate_deg_per_sec="1" /> -->
+<!-- <Object id="ShipSkyboxDisc_obj" lighting="false" pos="0 50 -5" scale="60 70 60" cull_face="none" blend_dest="constant_color" rotate_axis="0 -1 0" rotate_deg_per_sec="1" /> -->
+
+<Sound id="Music-Rain" rect="-999 -999 999 999" loop="true" play_once="false" />
+
+</Room>
+</FireBoxRoom>
+</body>
+</html>
