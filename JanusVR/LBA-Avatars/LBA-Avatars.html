@@ -1,0 +1,34 @@
+<!-- Written with Janus VR.  URL: file:///C:/Images/posterity/JanusVR/JanusVR_Win32/workspace/vchat-world14/TheCompass.html -->
+<html>
+<head>
+<title>T-Inc</title>
+</head>
+<body>
+<FireBoxRoom>
+<Assets>
+
+<AssetObject id="AvatarRoom_obj" src="AvatarRoom.obj" mtl="AvatarRoom.mtl" />
+<AssetSound id="TheVillage" src="TheVillage.mp3" />
+
+<AssetGhost id="AntGuy" src="ghost1.txt" />
+<AssetObject id="AntGuyHead_obj" src="AntGuyHead.obj" mtl="AntGuyHead.mtl" />
+<AssetObject id="AntGuyBody_obj" src="AntGuyBody.obj" mtl="AntGuyBody.mtl" />
+
+<AssetGhost id="Twinsen" src="ghost2.txt" />
+<AssetObject id="TwinsenHead_obj" src="TwinsenHead.obj" mtl="TwinsenHead.mtl" />
+<AssetObject id="TwinsenBody_obj" src="TwinsenBody.obj" mtl="TwinsenBody.mtl" />
+
+</Assets>
+<Room
+pos="-4.66 5.21 -7.03" xdir="0.390318 0.001400 -0.920679" ydir="0 1 0" zdir="0.920506 -0.020011 0.390215"
+>
+<Object id="AvatarRoom_obj" collision_id="AvatarRoom_obj" pos="0 0 0" scale="5 5 5" cull_face="black" blend_dest="constant_color" />
+<Sound id="TheVillage" rect="-3.93 -8.44 -3.99 -4.96" loop="true" play_once="false" />
+
+<Ghost id="AntGuy" auto_play="true" head_id="AntGuyHead_obj" body_id="AntGuyBody_obj" head_pos="0 1 0" scale="1 1 1" lighting="false" />
+<Ghost id="Twinsen" auto_play="true" head_id="TwinsenHead_obj" body_id="TwinsenBody_obj" head_pos="0 1 0" scale="1.5 1.5 1.5" lighting="false" />
+
+</Room>
+</FireBoxRoom>
+</body>
+</html>
