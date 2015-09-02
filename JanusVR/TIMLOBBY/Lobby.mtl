@@ -1,5 +1,5 @@
-# Blender MTL File: 'Lobby12.blend'
-# Material Count: 18
+# Blender MTL File: 'Lobby13.blend'
+# Material Count: 17
 
 newmtl Material
 Ns 96.078431
@@ -12,16 +12,6 @@ illum 2
 map_Kd highway.png
 
 newmtl Material.001
-Ns 96.078431
-Ka 0.000000 0.000000 0.000000
-Kd 1.000000 1.000000 1.000000
-Ks 0.500000 0.500000 0.500000
-Ni 1.000000
-d 1.000000
-illum 2
-map_Kd Wall1.png
-
-newmtl Material.001_Tiles.png.001
 Ns 96.078431
 Ka 0.000000 0.000000 0.000000
 Kd 1.000000 1.000000 1.000000
@@ -49,6 +39,16 @@ Ks 0.500000 0.500000 0.500000
 Ni 1.000000
 d 1.000000
 illum 2
+map_Kd Wallindent.png
+
+newmtl Material.003_Green.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
 map_Kd Green.png
 
 newmtl Material.003_Wall1.png
@@ -60,16 +60,6 @@ Ni 1.000000
 d 1.000000
 illum 2
 map_Kd Wall1.png
-
-newmtl Material.003_Wallindent.png
-Ns 96.078431
-Ka 0.000000 0.000000 0.000000
-Kd 0.640000 0.640000 0.640000
-Ks 0.500000 0.500000 0.500000
-Ni 1.000000
-d 1.000000
-illum 2
-map_Kd Wallindent.png
 
 newmtl Material.004
 Ns 96.078431
