@@ -1,0 +1,34 @@
+<!-- Written with Janus VR.  URL: file:///C:/Images/posterity/JanusVR/JanusVR_Win32/workspace/TIMLOBBY-Avatars/LobbyAvatars.html -->
+<html>
+<head>
+<title>T-Inc</title>
+</head>
+<body>
+<FireBoxRoom>
+<Assets>
+<AssetImage id="sky" src="black.png" />
+
+<AssetImage id="lbathumb" src="lbathumb.png" />
+
+<AssetObject id="Avatardisc_obj" src="Avatardisc.obj" mtl="Avatardisc.mtl" />
+
+<!-- http://t1migi.github.io/JanusVR/TIMLOBBY-Avatars/ -->
+
+<AssetGhost id="Cutter Slade" src="avatar1.txt" />
+<AssetObject id="CutterHead_obj" src="CutterHead.obj" mtl="CutterHead.mtl" />
+<AssetObject id="CutterBody_obj" src="CutterBody.obj" mtl="CutterBody.mtl" />
+
+</Assets>
+<Room
+pos="14.5 0.20 0" fwd="-1 0 0"
+skybox_left_id="sky" skybox_right_id="sky" skybox_front_id="sky" skybox_back_id="sky" skybox_up_id="sky" skybox_down_id="sky"
+>
+
+<Object id="Avatardisc_obj" collision_id="Avatardisc_obj" pos="0 0 0" scale="15 5 15" cull_face="black" blend_dest="constant_color" />
+
+<Ghost id="Cutter Slade" auto_play="true" head_id="CutterHead_obj" body_id="CutterBody_obj" head_pos="0 1 0" scale="1.600 1.600 1.600" lighting="false" />
+
+</Room>
+</FireBoxRoom>
+</body>
+</html>
