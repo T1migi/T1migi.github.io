@@ -9,7 +9,7 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd c8db3b92.dds
+map_Kd c8db3b92.png
 
 newmtl material_268
 Ns 0.000000
@@ -19,7 +19,7 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd 08505fb5.dds
+map_Kd 08505fb5.png
 
 newmtl material_269
 Ns 0.000000
@@ -29,7 +29,7 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd 6bc1741d.dds
+map_Kd 6bc1741d.png
 
 newmtl material_269_NONE
 Ns 0.000000
@@ -39,7 +39,7 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd 6bc1741d.dds
+map_Kd 6bc1741d.png
 
 newmtl material_27
 Ns 0.000000
@@ -49,8 +49,8 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd 1300683c.dds
-map_d 1300683c.dds
+map_Kd 1300683c.png
+map_d 1300683c.png
 
 newmtl material_270
 Ns 0.000000
@@ -60,7 +60,7 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd e6f5e471.dds
+map_Kd e6f5e471.png
 
 newmtl material_271
 Ns 0.000000
@@ -70,9 +70,9 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd e6f5e471.dds
+map_Kd e6f5e471.png
 
-newmtl material_271_04beddd1.dds
+newmtl material_271_04beddd1.png
 Ns 0.000000
 Ka 0.000000 0.000000 0.000000
 Kd 0.600000 0.600000 0.600000
@@ -80,4 +80,4 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd 04beddd1.dds
+map_Kd 04beddd1.png
