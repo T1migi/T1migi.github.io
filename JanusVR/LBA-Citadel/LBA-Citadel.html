@@ -1,7 +1,7 @@
-<!-- Written with Janus VR.  URL: file:///C:/Images/posterity/JanusVR/JanusVR_Win32/workspace/vchat-world14/TheCompass.html -->
+<!-- Written with Janus VR.  URL: file:///C:/images/posterity/janusvr/JanusVR_Win32/workspace/LBA-Citadel/LBA-Citadel.html -->
 <html>
 <head>
-<title>T-Inc</title>
+<title>Citadel Island</title>
 </head>
 <body>
 <FireBoxRoom>
@@ -14,10 +14,12 @@
 
 <AssetObject id="CitadelIsland" src="Citadel.obj" mtl="Citadel.mtl" />
 <AssetObject id="watercube" src="watercube.obj" mtl="watercube.mtl" />
+<AssetObject id="skycube" src="watercube.obj" mtl="skycube.mtl" />
 
 <AssetObject id="Tree1_obj" src="Tree1.obj" mtl="Tree1.mtl" />
 <AssetObject id="Tree2_obj" src="Tree2.obj" mtl="Tree2.mtl" />
 <AssetObject id="TreePalm_obj" src="TreePalm.obj" mtl="TreePalm.mtl" />
+<AssetObject id="Plant_obj" src="Plant1.obj" mtl="Plant1.mtl" />
 
 </Assets>
 <!--FERRY COORDS: pos="-58.40 2.26 53.26" fwd="0 0 -1" -->
@@ -27,8 +29,9 @@ pos="24.10 0.73 88.70" fwd="1 0 0"
 skybox_left_id="skyside" skybox_right_id="skyside" skybox_front_id="skyside" skybox_back_id="skyside" skybox_up_id="skyside" skybox_down_id="skyside"
 fog="true" fog_mode="linear" fog_density="0.1" fog_col="0.50196 0.70588 0.83137" fog_start="75" fog_end="100"
 >
-<Object id="CitadelIsland" collision_id="CitadelIsland" pos="0 0 0" scale="100 100 100" cull_face="none" blend_dest="constant_color"/>
+<Object id="CitadelIsland" collision_id="CitadelIsland" pos="0 0 0" scale="100 100 100" cull_face="back" blend_dest="constant_color"/>
 <Object id="watercube" pos="0 -0.755 0" scale="350 1 350" cull_face="none" blend_dest="constant_color" shader_id="shader_water" rotate_axis="0 1 0" rotate_deg_per_sec="0.25" />
+<!-- <Object id="skycube" pos="0 50 0" scale="350 1 350" cull_face="none" blend_dest="constant_color" shader_id="shader_water" rotate_axis="0 1 0" rotate_deg_per_sec="0.25" /> -->
 
 <!-- <Sound id="Theme" rect="-60 50 -56 53" loop="true" /> -->
 <Sound id="Theme" rect="22 91.50 26 85.91" loop="false" play_once="false" />
@@ -44,11 +47,29 @@ fog="true" fog_mode="linear" fog_density="0.1" fog_col="0.50196 0.70588 0.83137"
 <Object id="Tree1_obj" collision_id="Tree1_obj" pos="-32.30 1.68 25.34" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
 <Object id="Tree1_obj" collision_id="Tree1_obj" pos="-0.50 3.09 121.46" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
 <Object id="Tree1_obj" collision_id="Tree1_obj" pos="2.91 12.21 -58.05" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="20.16 16.61 -74.46" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="34.11 16.82 -74.76" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="38.24 16.79 -78.93" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="40 16.82 -68.68" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="42.04 16.85 -66.67" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="47.93 17.53 -73.22" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="63.57 13.03 -60.73" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="88.38 16.35 -93.42" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="-21.26 15.46 -75.31" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree1_obj" collision_id="Tree1_obj" pos="-27.42 16.58 -90.21" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
 
 <Object id="Tree2_obj" collision_id="Tree2_obj" pos="35.93 1.7 92.25" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
 <Object id="Tree2_obj" collision_id="Tree2_obj" pos="-16.38 1.68 42.25" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
 <Object id="Tree2_obj" collision_id="Tree2_obj" pos="49.16 0.73 -26.03" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
 <Object id="Tree2_obj" collision_id="Tree2_obj" pos="7.60 12.31 -53.59" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree2_obj" collision_id="Tree2_obj" pos="-29.33 16.04 -76.87" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree2_obj" collision_id="Tree2_obj" pos="-25.17 16.29 -83.94" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree2_obj" collision_id="Tree2_obj" pos="-13.33 15.16 -73.50" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree2_obj" collision_id="Tree2_obj" pos="32.12 16.82 -80.47" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree2_obj" collision_id="Tree2_obj" pos="34.13 16.82 -69.86" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree2_obj" collision_id="Tree2_obj" pos="40.09 16.82 -72.45" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree2_obj" collision_id="Tree2_obj" pos="47.98 16.80 -64.47" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
+<Object id="Tree2_obj" collision_id="Tree2_obj" pos="55.87 16.35 -65.58" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
 
 <Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="48 0.95 72.51" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color"/>
 <Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="2.56 1.30 84.35" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color" xdir="-0.26 0 0.97" ydir="0 1 0" zdir="-0.97 0 -0.26"/>
@@ -57,6 +78,17 @@ fog="true" fog_mode="linear" fog_density="0.1" fog_col="0.50196 0.70588 0.83137"
 <Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="31.63 4.04 135.83" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color" xdir="-0.73 0 0.69" ydir="0 1 0" zdir="0.68 0 0.72"/>
 <Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="-42.68 1.95 119.71" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color" xdir="-0.73 0 0.69" ydir="0 1 0" zdir="0.68 0 0.72"/>
 <Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="-45.34 1.80 118.90" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color" xdir="0.69 0 0.73" ydir="0 1 0" zdir="-0.73 0 0.69"/>
+<Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="82.91 16.35 -90.39" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color" xdir="0.85 0 0.52" ydir="0 1 0" zdir="-0.52 0 0.85"/>
+<Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="85.21 16.35 -96.44" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color" xdir="0.35 0 0.92" ydir="0 1 0" zdir="-0.92 0 -0.36"/>
+<Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="-65.33 15.87 -85.44" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color" xdir="-0.14 0 -0.98" ydir="0 1 0" zdir="0.98 0 -0.14"/>
+<Object id="TreePalm_obj" collision_id="TreePalm_obj" pos="-54.77 15.87 -96.58" scale="100 100 100" shader_id="shader_tree" cull_face="none" blend_dest="constant_color" xdir="0.99 0 0.02" ydir="0 1 0" zdir="-0.02 0 0.99"/>
+
+<Object id="Plant_obj" collision_id="Plant_obj" pos="32.40 11.49 -51.43" scale="1 1 1" shader_id="shader_tree" cull_face="back" blend_dest="constant color" />
+<Object id="Plant_obj" collision_id="Plant_obj" pos="-30.10 16.58 -96.32" scale="1 1 1" shader_id="shader_tree" cull_face="back" blend_dest="constant color" />
+<Object id="Plant_obj" collision_id="Plant_obj" pos="-32.10 16.17 -97.49" scale="1 1 1" shader_id="shader_tree" cull_face="back" blend_dest="constant color" />
+<Object id="Plant_obj" collision_id="Plant_obj" pos="28.68 16.82 -95.71" scale="1 1 1" shader_id="shader_tree" cull_face="back" blend_dest="constant color" />
+<Object id="Plant_obj" collision_id="Plant_obj" pos="34.86 16.35 -93.48" scale="1 1 1" shader_id="shader_tree" cull_face="back" blend_dest="constant color" />
+<Object id="Plant_obj" collision_id="Plant_obj" pos="41.74 16.82 -97.23" scale="1 1 1" shader_id="shader_tree" cull_face="back" blend_dest="constant color" />
 
 <Link pos="0.6 0.7 43.59" fwd="1 0 0" url="http://t1migi.github.io/JanusVR/LBA-Avatars/LBA-Avatars.html" scale="1.8 2.7 1" title="Avatars" />
 
