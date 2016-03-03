@@ -1,0 +1,15 @@
+# Blender v2.68 (sub 0) OBJ File: ''
+# www.blender.org
+mtllib GRASSGROUNDforTESTING.mtl
+o Cube
+v -1.000000 0.000000 1.000000
+v -1.000000 0.000000 -1.000000
+v 1.000000 0.000000 -1.000000
+v 1.000000 0.000000 1.000000
+vt 2.001254 -1.001254
+vt 2.001254 2.001254
+vt -1.001254 2.001254
+vt -1.001254 -1.001254
+usemtl Material
+s off
+f 4/1 3/2 2/3 1/4
