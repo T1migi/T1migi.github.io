@@ -1,0 +1,57 @@
+<!-- Written with Janus VR. -->
+<html>
+<head>
+<title>Ingen Town</title>
+</head>
+<body>
+<FireBoxRoom>
+<Assets>
+<AssetImage id="skyside" src="SkySide.png" />
+
+<AssetImage id="thumb" src="thumb.png" />
+
+<AssetSound id="Ambient1" src="TownAmbient.mp3" />
+<AssetSound id="Ambient2" src="TownAmbient2.mp3" />
+
+<AssetShader id="room_shader" src="tres_frag.txt"/>
+<AssetShader id="shader_tree" vertex_src="http://www.dgp.toronto.edu/~mccrae/projects/firebox/home/tree_vertex.txt" />
+
+<AssetObject id="FLOORPLATE" src="IT-MapPlan.obj" mtl="IT-MapPlan.mtl" />
+
+<AssetObject id="HammondMansion" src="HammondsMansion.obj" mtl="HammondsMansion.mtl" />
+<AssetObject id="WuWall" src="WuWall.obj" mtl="WuWall.mtl" />
+<AssetObject id="HammondWall" src="HammondWall.obj" mtl="HammondWall.mtl" />
+<AssetObject id="WelcomeSign" src="PWelcomSign.obj" mtl="PWelcomSign.mtl" />
+<AssetObject id="CubanPalm" src="CubanPalm.obj" mtl="CubanPalm.mtl" />
+<!-- note to self: don't put ' marks in github files -->
+</Assets>
+<!-- posX72 to place portal just inside of gate-->
+<Room
+pos="85.090004 0 -22.34" fwd="-1 0 0"
+skybox_left_id="skyside" skybox_right_id="skyside" skybox_front_id="skyside" skybox_back_id="skyside" skybox_up_id="skyside" skybox_down_id="skyside"
+fog="true" fog_mode="linear" fog_density="0.1" fog_col="0.50196 0.70588 0.83137" fog_start="75" fog_end="100"
+>
+<Object id="FLOORPLATE" collision_id="FLOORPLATE" pos="0 0 0" scale="18 18 18" cull_face="back" blend_dest="constant_color"/>
+<Object id="HammondMansion" collision_id="HammondMansion" pos="47 0 -66" xdir="1 0 0" zdir="-0 0 1" scale="16 16 16" cull_face="back" blend_dest="constant_color"/>
+<Object id="HammondWall" collision_id="HammondWall" pos="46.799999 1.4 -35.399998" scale="27 27 27" xdir="0 0 -1" ydir="0 1 0" zdir="1 0 0" cull_face="back" blend_dest="constant_color"/>
+<Object id="WuWall" collision_id="WuWall" pos="56 0.87 11" scale="30 30 30" cull_face="back" blend_dest="constant_color"/>
+<Object id="WelcomeSign" collision_id="WelcomeSign" pos="59 1 -13" xdir="-1 0 -0" ydir="0 1 0" zdir="0 0 -1" scale="1 1 1" cull_face="back" blend_dest="constant_color"/>
+
+<!-- FOLIAGE
+Master CubanPalm: <Object id="CubanPalm" collision_id="CubanPalm" pos="68 0 -11" scale="11 10 11" cull_face="none" blend_dest="constant_color" shader_id="shader_tree" /> -->
+<Object id="CubanPalm" js_id="5" pos="68 0 -35" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_dest="constant_color" />
+<Object id="CubanPalm" js_id="6" pos="55 0 -11" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_dest="constant_color" />
+<Object id="CubanPalm" js_id="7" pos="41 0 -11" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_dest="constant_color" />
+<Object id="CubanPalm" js_id="8" pos="68 0 -11" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_dest="constant_color" />
+<Object id="CubanPalm" js_id="9" pos="55 0 -35" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_dest="constant_color" />
+<Object id="CubanPalm" js_id="10" pos="42 0 -35" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_dest="constant_color" />
+<Object id="CubanPalm" js_id="11" pos="27 0 -11" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_dest="constant_color" />
+<Object id="CubanPalm" js_id="12" pos="27 0 -36" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_dest="constant_color" />
+<!-- FOLIAGE -->
+
+<Sound id="Ambient1" rect="70 -41 62 -3" loop="false" play_once="true" />
+
+</Room>
+</FireBoxRoom>
+</body>
+</html>
