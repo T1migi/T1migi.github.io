@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Experimental Room - Dithering Shader</title>
+
+<body>
+
+<FireBoxRoom>
+<Assets>
+<AssetObject id="Timigi" src="TimigiStanding.obj" mtl="TimigiStanding.mtl" />
+<AssetShader id="Dithering" src="tres_frag.txt"/>
+</Assets>
+
+<Room pos="0 0 0" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1">
+<Object id="pyramid" pos="0 -0.1 6.7" xdir="-1 0 0" ydir="-0 -1 -0.000001" zdir="0 -0.000001 1" scale="18 18 18" collision_id="pyramid" />
+<Object id="Timigi" pos="0 -0.1 7.1" xdir="-1 -0 -0.000002" ydir="-0 1 -0.000001" zdir="0.000002 -0.000001 -1" scale="0.4 0.4 0.4" lighting="false" cull_face="none" collision_id="Timigi" shader_id="Dithering" rotate_axis="0 1 0" rotate_deg_per_sec="15"/>
+<Object id="cube" js_id="2" pos="2.4 1.2 6.4" xdir="0.173647 0 0.984808" ydir="-0.98106 0.087156 0.172986" zdir="-0.085832 -0.996195 0.015134" scale="0.1 2.3 1" collision_id="cube"/>
+<Object id="cube" js_id="3" pos="2.4 0.7 6.5" xdir="0 1 0" ydir="0.342021 0 0.939692" zdir="0.939692 0 -0.342021" scale="2.4 0.1 0.1" col="#f4a460" collision_id="cube"/>
+<Text js_id="4" pos="2.4 1.4 6.4" xdir="-0.98106 0.087156 0.172987" ydir="0.085832 0.996195 -0.015134" zdir="-0.173648 0 -0.984808" scale="2 2 2" col="#000000">A really cool dithering effect</Text>
+<Text js_id="5" pos="2.4 1.2 6.4" xdir="-0.98106 0.087156 0.172988" ydir="0.085832 0.996195 -0.015135" zdir="-0.173649 0 -0.984808" scale="2.1 2.1 2" col="#000000">that unfortunately lags to high heaven</Text>
+<Text js_id="6" pos="2.4 1 6.4" xdir="-0.98106 0.087156 0.172988" ydir="0.085832 0.996195 -0.015135" zdir="-0.173649 0 -0.984808" col="#000000">if seen up close</Text>
+</Room>
+</FireBoxRoom>
+
+</body>
+</html>
