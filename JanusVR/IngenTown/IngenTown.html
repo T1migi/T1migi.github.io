@@ -12,6 +12,16 @@
 
 <AssetSound id="Ambient1" src="TownAmbient.mp3" />
 <AssetSound id="Ambient2" src="TownAmbient2.mp3" />
+<AssetSound id="HammondHouse" src="hammondhouse.mp3" />
+<AssetSound id="VH22" src="VH22.mp3" />
+<AssetSound id="VH45" src="VH45.mp3" />
+<AssetSound id="VH46" src="VH46.mp3" />
+<AssetSound id="VH65" src="VH65.mp3" />
+<AssetSound id="VH66" src="VH66.mp3" />
+<AssetSound id="VH99" src="VH99.mp3" />
+<AssetSound id="VH100" src="VH100.mp3" />
+<AssetSound id="VH101" src="VH101.mp3" />
+<AssetSound id="VH147" src="VH147.mp3" />
 
 <AssetShader id="room_shader" src="tres_frag.txt"/>
 <AssetShader id="shader_tree" vertex_src="http://www.dgp.toronto.edu/~mccrae/projects/firebox/home/tree_vertex.txt" />
@@ -37,6 +47,16 @@
 <AssetObject id="Court" src="Court.obj" mtl="Court.mtl" />
 <AssetObject id="Canopy" src="Canopy.obj" mtl="Canopy.mtl" />
 <AssetObject id="SFrame" src="Frame.obj" mtl="Frame.mtl" />
+<AssetObject id="Store" src="Store.obj" mtl="Store.mtl" />
+<AssetObject id="Parking" src="Parking.obj" mtl="Parking.mtl" />
+<AssetObject id="WatertowerBase" src="WatertowerBase.obj" mtl="WatertowerBase.mtl" />
+<AssetObject id="WatertowerBottom" src="WatertowerBottom.obj" mtl="WatertowerBottom.mtl" />
+<AssetObject id="Watertower" src="Watertower.obj" mtl="Watertower.mtl" />
+<AssetObject id="WatertowerTop" src="WatertowerTop.obj" mtl="WatertowerTop.mtl" />
+<AssetObject id="GeneratorTower" src="GeneratorTower.obj" mtl="GeneratorTower.mtl" />
+<AssetObject id="Cafe" src="Cafe.obj" mtl="Cafe.mtl" />
+<AssetObject id="SOP" src="SOP.obj" mtl="SOP.mtl" />
+<AssetObject id="WuHouse" src="WuHouse.obj" mtl="WuHouse.mtl" />
 <!-- note to self: don't put ' marks in github files -->
 </Assets>
 <!-- posX72 to place portal just inside of gate-->
@@ -45,32 +65,47 @@ pos="85.090004 0 -22.34" fwd="-1 0 0"
 fog="true" fog_mode="linear" fog_density="0.1" fog_col="0.50196 0.70588 0.83137" fog_start="0" fog_end="1000"
 >
 <!-- skybox_left_id="skyside" skybox_right_id="skyside" skybox_front_id="skyside" skybox_back_id="skyside" skybox_up_id="skyside" skybox_down_id="skyside" -->
-<Object id="FLOORPLATE" collision_id="FLOORPLATE" pos="0 0 0" scale="18 18 18" cull_face="back" blend_dest="constant_color"/>
-<Object id="HammondMansion" collision_id="HammondMansion" pos="47.299999 0 -69" xdir="1 0 0" zdir="-0 0 1" scale="16 16 16" cull_face="back" blend_dest="constant_color"/>
-<Object id="HammondWall" collision_id="HammondWall" pos="47 1.4 -37" scale="27 27 27" xdir="0 0 -1" ydir="0 1 0" zdir="1 0 0" cull_face="back" blend_dest="constant_color"/>
-<Object id="WuWall" collision_id="WuWall" pos="56 0.9 13" scale="30 30 30" cull_face="back" blend_dest="constant_color"/>
-<Object id="WelcomeSign" collision_id="WelcomeSign" pos="59 1 -13" xdir="-1 0 -0" ydir="0 1 0" zdir="0 0 -1" scale="1 1 1" cull_face="back" blend_dest="constant_color"/>
-<Object id="ManagerHouse" collision_id="ManagerHouse" pos="4 0 -42" xdir="-1 0 -0" ydir="0 1 0" zdir="0 0 1" scale="7 7 7" cull_face="back" blend_dest="constant_color"/>
-<Object id="ManagerHouse" collision_id="ManagerHouse" pos="-61 0 -2" xdir="0 0 -1" ydir="0 1 0" zdir="1 0 0" scale="7 7 7" cull_face="back" blend_dest="constant_color"/>
-<Object id="ManagerHouse" collision_id="ManagerHouse" pos="-91 0 -99" xdir="1 0 -0" ydir="0 1 0" zdir="0 0 1" scale="7 7 7" cull_face="back" blend_dest="constant_color"/>
-<Object id="ManagerHouse" collision_id="ManagerHouse" pos="-170 0 -99" xdir="1 0 -0" ydir="0 1 0" zdir="0 0 1" scale="7 7 7" cull_face="back" blend_dest="constant_color"/>
-<Object id="Statue" collision_id="Statue" pos="-67.5 0 -49.700001" xdir="1 0 -0" ydir="0 1 0" zdir="0 0 1" scale="2 2 2" cull_face="back" blend_dest="constant_color"/>
-<Object id="TechnicianBungalow" collision_id="TechnicianBungalow" pos="-23 0 -39.5" xdir="0 0 1" ydir="0 1 0" zdir="-1 0 0" scale="4.5 4.5 4.5" cull_face="back" blend_dest="constant_color"/>
-<Object id="TechnicianBungalow" collision_id="TechnicianBungalow" pos="-23 0 -59" xdir="0 0 1" ydir="0 1 0" zdir="-1 0 0" scale="4.5 4.5 4.5" cull_face="back" blend_dest="constant_color"/>
-<Object id="TechnicianBungalow" collision_id="TechnicianBungalow" pos="-116 0 -96" xdir="1 0 0" ydir="0 1 0" zdir="-0 0 1" scale="4.5 4.5 4.5" cull_face="back" blend_dest="constant_color"/>
-<Object id="Church" collision_id="Church" pos="-67 -0.2 -105" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="19 19 19" cull_face="back" blend_dest="constant_color"/>
-<Object id="ChurchPillar" collision_id="ChurchPillar" pos="-63.069996 4.59 -91.36995" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="3 3 3" cull_face="back" blend_dest="constant_color"/>
-<Object id="ChurchPillar" collision_id="ChurchPillar" pos="-64.949997 4.59 -91.36995" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="3 3 3" cull_face="back" blend_dest="constant_color"/>
-<Object id="ChurchPillar" collision_id="ChurchPillar" pos="-69 4.59 -91.36995" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="3 3 3" cull_face="back" blend_dest="constant_color"/>
-<Object id="ChurchPillar" collision_id="ChurchPillar" pos="-70.879997 4.59 -91.36995" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="3 3 3" cull_face="back" blend_dest="constant_color"/>
-<Object id="ChurchSign" collision_id="ChurchSign" pos="-65.099998 3.2 -94.099998" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="0.3 0.3 0.3" cull_face="back" blend_dest="constant_color"/>
-<Object id="ChurchStairs" collision_id="ChurchStairs" pos="-73.400002 2.36 -115.07" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="2.86 2.86 2.86" cull_face="back" blend_dest="constant_color"/>
-<Object id="Saloon" collision_id="Saloon" pos="-115 0 -42" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="10 10 10" cull_face="back" blend_dest="constant_color"/>
-<Object id="HammondWall2" collision_id="HammondWall2" pos="45.579998 0.1 -85.969994" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="31.629999 31.5 40.589996" cull_face="back" blend_dest="constant_color"/>
-<Object id="TownWestWall" collision_id="TownWestWall" pos="-90.829994 -0.41 -125.809998" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="108 99 127" cull_face="back" blend_dest="constant_color"/>
-<Object id="BusCrash" collision_id="BusCrash" pos="-38 0 40" xdir="0.936117 -0.0819 0.34202" ydir="0.087156 0.996195 0" zdir="-0.340719 0.029809 0.939693" scale="5 5 5" cull_face="back" blend_dest="constant_color"/>
-<Object id="Court" collision_id="Court" pos="3.9 0.1 7.3" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="9 0.1 8" cull_face="back" blend_dest="constant_color"/>
-<Object id="SFrame" collision_id="SFrame" pos="-25 0 16" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="3 3 3" cull_face="back" blend_dest="constant_color"/>
+<Object id="FLOORPLATE" js_id="0" scale="18 18 18" collision_id="FLOORPLATE" blend_dest="constant_color" />
+<Object id="HammondMansion" js_id="1" pos="47.299999 0 -69" scale="16 16 16" collision_id="HammondMansion" blend_dest="constant_color" />
+<Object id="HammondWall" js_id="2" pos="47 1.4 -37" xdir="0 0 -1" zdir="1 0 0" scale="27 27 27" collision_id="HammondWall" blend_dest="constant_color" />
+<Object id="WuWall" js_id="3" pos="56 0.9 13" scale="30 30 30" collision_id="WuWall" blend_dest="constant_color" />
+<Object id="WelcomeSign" js_id="4" pos="59 1 -13" xdir="-1 0 0" zdir="0 0 -1" collision_id="WelcomeSign" blend_dest="constant_color" />
+<Object id="ManagerHouse" js_id="5" pos="4 0 -42" scale="7 7 7" collision_id="ManagerHouse" blend_dest="constant_color" />
+<Object id="ManagerHouse" js_id="6" pos="-61 0 -2" xdir="0 0 -1" zdir="1 0 0" scale="7 7 7" collision_id="ManagerHouse" blend_dest="constant_color" />
+<Object id="ManagerHouse" js_id="7" pos="-91 0 -99" scale="7 7 7" collision_id="ManagerHouse" blend_dest="constant_color" />
+<Object id="ManagerHouse" js_id="8" pos="-173 0 -99" scale="7 7 7" collision_id="ManagerHouse" blend_dest="constant_color" />
+<Object id="Statue" js_id="9" pos="-67.5 0 -49.700001" scale="2 2 2" collision_id="Statue" blend_dest="constant_color" />
+<Object id="TechnicianBungalow" js_id="10" pos="-23 0 -39.5" xdir="0 0 1" zdir="-1 0 0" scale="4.5 4.5 4.5" collision_id="TechnicianBungalow" blend_dest="constant_color" />
+<Object id="TechnicianBungalow" js_id="11" pos="-23 0 -59" xdir="0 0 1" zdir="-1 0 0" scale="4.5 4.5 4.5" collision_id="TechnicianBungalow" blend_dest="constant_color" />
+<Object id="TechnicianBungalow" js_id="12" pos="-110 0 -96" scale="4.5 4.5 4.5" collision_id="TechnicianBungalow" blend_dest="constant_color" />
+<Object id="TechnicianBungalow" js_id="13" pos="-58 0 45" xdir="0 0 -1" zdir="1 0 0" scale="4.5 4.5 4.5" collision_id="TechnicianBungalow" blend_dest="constant_color" />
+<Object id="Church" js_id="14" pos="-67 -0.2 -105" scale="19 19 19" collision_id="Church" blend_dest="constant_color" />
+<Object id="ChurchPillar" js_id="15" pos="-63.069996 4.59 -91.369949" scale="3 3 3" collision_id="ChurchPillar" blend_dest="constant_color" />
+<Object id="ChurchPillar" js_id="16" pos="-64.949997 4.59 -91.369949" scale="3 3 3" collision_id="ChurchPillar" blend_dest="constant_color" />
+<Object id="ChurchPillar" js_id="17" pos="-69 4.59 -91.369949" scale="3 3 3" collision_id="ChurchPillar" blend_dest="constant_color" />
+<Object id="ChurchPillar" js_id="18" pos="-70.879997 4.59 -91.369949" scale="3 3 3" collision_id="ChurchPillar" blend_dest="constant_color" />
+<Object id="ChurchSign" js_id="19" pos="-65.099998 3.2 -94.099998" scale="0.3 0.3 0.3" collision_id="ChurchSign" blend_dest="constant_color" />
+<Object id="ChurchStairs" js_id="20" pos="-73.400002 2.36 -115.07" scale="2.86 2.86 2.86" collision_id="ChurchStairs" blend_dest="constant_color" />
+<Object id="Saloon" js_id="21" pos="-115 0 -42.5" scale="10 10 10" collision_id="Saloon" blend_dest="constant_color" />
+<Object id="HammondWall2" js_id="22" pos="45.579998 0.1 -85.969994" scale="31.629999 31.5 40.589996" collision_id="HammondWall2" blend_dest="constant_color" />
+<Object id="TownWestWall" js_id="23" pos="-90.829994 -0.41 -125.809998" scale="108 99 127" collision_id="TownWestWall" blend_dest="constant_color" />
+<Object id="BusCrash" js_id="24" pos="-38 0 45" xdir="0.936117 -0.0819 0.34202" ydir="0.087156 0.996195 0" zdir="-0.340719 0.029809 0.939693" scale="5 5 5" collision_id="BusCrash" blend_dest="constant_color" />
+<Object id="Court" js_id="25" pos="3.9 0.1 7.3" scale="9 0.1 8" collision_id="Court" blend_dest="constant_color" />
+<Object id="SFrame" js_id="26" pos="-25 0 16" scale="3.5 3.5 3.5" collision_id="SFrame" blend_dest="constant_color" />
+<Object id="SFrame" js_id="27" pos="-57 0 23" scale="3.5 3.5 3.5" collision_id="SFrame" blend_dest="constant_color" />
+<Object id="SFrame" pos="-172 0 -62" scale="3.5 3.5 3.5" collision_id="SFrame" blend_dest="constant_color" />
+<Object id="Store" js_id="28" pos="-128 0.01 -3" xdir="-1 0 0" zdir="0 0 -1" scale="9 9 9" collision_id="Store" blend_dest="constant_color" />
+<Object id="Parking" js_id="29" pos="-111.5 0.05 -5.5" xdir="0 0 -1" zdir="1 0 0" scale="3.5 1 3.5" collision_id="Parking" blend_dest="constant_color" />
+<Object id="Parking" js_id="30" pos="-111.400002 0.05 -59.600002" xdir="-1 0 0" zdir="0 0 -1" scale="3.5 1 3.5" collision_id="Parking" blend_dest="constant_color" />
+<Object id="Parking" js_id="31" pos="-125.400002 0.05 -59.600002" xdir="-1 0 0" zdir="0 0 -1" scale="3.5 1 3.5" collision_id="Parking" blend_dest="constant_color" />
+<Object id="WatertowerBase" js_id="32" pos="-136 0 -41" xdir="-1 0 0" zdir="0 0 -1" scale="4 4 4" collision_id="WatertowerBase" blend_dest="constant_color" />
+<Object id="WatertowerTop" js_id="33" pos="-111 0.9 -22.6" xdir="0.707106 0 0.707108" zdir="-0.707108 0 0.707106" scale="3 3 3" collision_id="WatertowerTop" blend_dest="constant_color" />
+<Object id="Watertower" js_id="34" pos="-118.400002 2.2 -24" xdir="-0.891632 -0.266648 0.365911" ydir="0.283206 -0.959019 -0.008758" zdir="0.353251 0.095819 0.930609" scale="2.5 2.5 2.5" collision_id="Watertower" blend_dest="constant_color" />
+<Object id="WatertowerBottom" js_id="35" pos="-126.400002 3.4 -28.400002" xdir="0.866024 0 0.500002" zdir="-0.500002 0 0.866024" scale="6 6 6" collision_id="WatertowerBottom" blend_dest="constant_color" />
+<Object id="GeneratorTower" js_id="36" pos="-155.520004 0 -41" scale="8 8 8" collision_id="GeneratorTower" blend_dest="constant_color" />
+<Object id="Cafe" js_id="37" pos="-179 0.1 -43" scale="7 7 7" collision_id="Cafe" blend_dest="constant_color" />
+<Object id="SOP" js_id="38" pos="-245 1 -23" xdir="0 0 -1" zdir="1 0 0" scale="34 34 34" collision_id="SOP" blend_dest="constant_color" />
+<Object id="WuHouse"  pos="56 0 23" xdir="-1 0 0" ydir="0 1 0" zdir="0 0 -1" scale="13 13 13" collision_id="WuHouse" blend_dest="constant_color" />
 
 <!-- FOLIAGE
 Master CubanPalm: <Object id="CubanPalm" collision_id="CubanPalm" pos="68 0 -11" scale="11 10 11" cull_face="none" blend_dest="constant_color" shader_id="shader_tree" /> -->
@@ -91,12 +126,28 @@ Master CubanPalm: <Object id="CubanPalm" collision_id="CubanPalm" pos="68 0 -11"
 <Object id="CubanPalm" js_id="38" pos="63.080002 0 -48.779999" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_src="one_minus_constant_color" blend_dest="constant_color" />
 <Object id="CubanPalm" js_id="39" pos="69.190002 0 -54.889999" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_src="one_minus_constant_color" blend_dest="constant_color" />
 <Object id="CubanPalm" js_id="40" pos="67.660004 0 -79.309998" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_src="one_minus_constant_color" blend_dest="constant_color" />
+<Object id="CubanPalm" pos="-160 0 -54" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_src="one_minus_constant_color" blend_dest="constant_color" />
+<Object id="CubanPalm" pos="-172 0 -118" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_src="one_minus_constant_color" blend_dest="constant_color" />
+<Object id="CubanPalm" pos="-147 0 -108" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_src="one_minus_constant_color" blend_dest="constant_color" />
+<Object id="CubanPalm" pos="-2 0 -116" scale="11 10 11" shader_id="shader_tree" cull_face="none" collision_id="CubanPalm" blend_src="one_minus_constant_color" blend_dest="constant_color" />
 <Object id="Canopy" collision_id="Canopy" pos="-24 0 6" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="11 11 11" cull_face="back" blend_src="one_minus_constant_color" blend_dest="constant_color"/>
 <Object id="Canopy" collision_id="Canopy" pos="21.55 0 34.20" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="11 11 11" cull_face="back" blend_src="one_minus_constant_color" blend_dest="constant_color"/>
 <Object id="Canopy" collision_id="Canopy" pos="65 0 -116.5" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="11 11 11" cull_face="back" blend_src="one_minus_constant_color" blend_dest="constant_color"/>
+<Object id="CubanPalm" pos="-67.629997 0 -100.550003" scale="15 15 15" xdir="0.968457 0.193397 0.157125" ydir="-0.163333 0.968907 -0.185852" zdir="-0.188183 0.154326 0.969933" cull_face="none" collision_id="CubanPalm" blend_src="one_minus_constant_color" blend_dest="constant_color" />
 <!-- FOLIAGE -->
 
 <Sound id="Ambient1" rect="70 -41 62 -3" loop="false" play_once="true" />
+<Sound id="Ambient2" rect="-152 -124 -147 152" loop="false" play_once="true" />
+<Sound id="HammondHouse" rect="21.11 -49.30 72.88 -51.57" loop="false" play_once="true" />
+<Sound id="VH22" rect="63.25 31.48 51.23 21.33" loop="false" play_once="true" />
+<Sound id="VH147" rect="43.90 -46.11 50.14 -49.32" loop="false" play_once="true" />
+<Sound id="VH100" rect="-85.66 -67.42 -103.86 -84.97" loop="false" play_once="true" />
+<Sound id="VH101" rect="-106.72 -92.22 -133.21 -98.40" loop="false" play_once="true" />
+<!-- <Sound id="VH45" rect="" loop="false" play_once="true" />
+<Sound id="VH46" rect="" loop="false" play_once="true" /> -->
+<Sound id="VH65" rect="-172.55 -45.39 -183.05 -48.52" loop="false" play_once="true" />
+<Sound id="VH66" rect="-193.67 -13.14 -214.80 -31.46" loop="false" play_once="true" />
+<Sound id="VH99" rect="-227.70 -14.59 -234.40 -31.23" loop="false" play_once="true" />
 
 </Room>
 </FireBoxRoom>
