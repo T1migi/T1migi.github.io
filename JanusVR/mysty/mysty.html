@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Mysty</title>
+</head>
+<body>
+<FireBoxRoom>
+<Assets>
+
+<AssetImage id="sky" src="starrysky.png" />
+<AssetImage id="fireparticle" src="fireparticle.png" />
+<AssetImage id="smokeparticle" src="smokeparticle.png" />
+<AssetImage id="drygrass" src="drygrass1.png" />
+
+<AssetObject id="mysthome" src="mysthome.obj" mtl="mysthome.mtl" />
+<AssetObject id="mysthomerock" src="mysthomeRock1.obj" mtl="mysthomeRock1.mtl" />
+<AssetObject id="swirl" src="swirl.obj" mtl="swirl.mtl" />
+<AssetObject id="swirl2" src="swirl.obj" mtl="swirl2.mtl" />
+<AssetObject id="roller" src="roller.obj" mtl="roller.mtl" />
+
+<AssetObject id="surroundings1" src="surroundings.obj" mtl="surroundingsdepth1.mtl" />
+<AssetObject id="surroundings2" src="surroundings.obj" mtl="surroundingsdepth2.mtl" />
+<AssetObject id="surroundings3" src="surroundings.obj" mtl="surroundingsdepth3.mtl" />
+<AssetObject id="surroundings4" src="surroundings.obj" mtl="surroundingsdepth4.mtl" />
+
+<AssetSound id="Bowie" src="Subterraneans.mp3" />
+
+<AssetShader id="shader_tree" vertex_src="http://www.dgp.toronto.edu/~mccrae/projects/firebox/home/tree_vertex.txt" />
+
+</Assets>
+
+<Room
+skybox_left_id="sky" skybox_right_id="sky" skybox_front_id="sky" skybox_back_id="sky" skybox_up_id="sky" skybox_down_id="sky"
+pos="6.85 6.21 -0.07" xdir="0 0 1" ydir="0 1 0" zdir="-1 0 0"
+fog="true" fog_mode="linear" fog_Start="0" fog_end="500" fog_col="0.5 0 1"
+>
+
+<Object id="surroundings1" pos="0 -15 0" scale="12.5 12.5 12.5" cull_face="none" blend_src="one_minus_src_color" lighting="false" rotate_axis="0 1 0" rotate_deg_per_sec="1" col="000000" />
+<Object id="surroundings2" pos="0 50 0" scale="12.6 12.6 12.6" cull_face="none" blend_src="one_minus_src_color" lighting="false" rotate_axis="0 1 0" rotate_deg_per_sec="0.75" col="000000" />
+<Object id="surroundings3" pos="0 50 0" scale="12.7 12.7 12.7" cull_face="none" blend_src="one_minus_src_color" lighting="false" rotate_axis="0 1 0" rotate_deg_per_sec="0.50" col="000000" />
+<Object id="surroundings4" pos="0 50 0" scale="12.8 12.8 12.8" cull_face="none" blend_src="one_minus_src_color" lighting="false" rotate_axis="0 1 0" rotate_deg_per_sec="0.35" col="000000" />
+
+<Particle image_id="smokeparticle" duration="30" pos="0 6 0" count="1000" rate="1" fade_in="7.5" fade_out="50" vel="0 1 0" col="0 0 0" scale="1 1 1" rand_pos="0.1 0.1 0.1" rand_scale="1 1 1" rand_vel="0.1 0.1 0.1" loop="true" lighting="false"/>
+<Particle image_id="fireparticle" duration="1" pos="0 6 0" count="1000" rate="4" fade_in="0.1" fade_out="1.0" rand_scale="-0.5 -0.5 -0.5" vel="0 2 0" col="1 1 1" scale="1 1 1" rand_pos="0.1 0.1 0.1" rand_vel="0.5 -0.5 0.5" loop="true" lighting="false" />
+
+<Sound id="Bowie" rect="-200 -200 200 200" loop="true" play_once="false" />
+
+<!-- <Object id="roller" xdir="0 -0 1" ydir="-1 0 -0" zdir="-0 1 -0" pos="0 -50 0" scale="350 350 250" cull_face="back" blend_src="dst_alpha" blend_dest="src_color" lighting="false" rotate_axis="1 1 1" rotate_deg_per_sec="-5" col="#808080" />
+<Object id="roller" xdir="0 -0 1" ydir="-1 0 -0" zdir="-0 1 -0" pos="0 -50 0" scale="350 350 250" cull_face="back" blend_src="dst_alpha" blend_dest="src_color" lighting="false" rotate_axis="1 1 1" rotate_deg_per_sec="5" col="#808080" />
+use this effect in a different room -->
+
+<!--<Object id="roller" xdir="0 -0 1" ydir="-1 0 -0" zdir="-0 1 -0" pos="0 0 0" scale="360 360 110" cull_face="back" blend_src="dst_alpha" blend_dest="src_color" lighting="false" rotate_axis="1 1 1" rotate_deg_per_sec="5" col="#000000" />-->
+<Object id="roller" xdir="0 -0 1" ydir="-1 0 -0" zdir="-0 1 -0" pos="0 0 0" scale="350 350 100" cull_face="back" blend_src="src_color" blend_dest="dst_color" lighting="false" rotate_axis="1 1 1" rotate_deg_per_sec="5" col="#c4ff00" />
+
+<!-- NICE COLORS: #c4ff00 #85ff5e
+	 FOGS: 0.5 0 1 - 0 0 1 - 1 0.5 0 -->
+
+<Object id="mysthome" collision_id="mysthome" pos="0 0 0" scale="6 6 6" cull_face="none" blend_src="one" blend_dest="constant_color" lighting="true" />
+<Object id="mysthomerock" collision_id="mysthomerock" pos="-42 -3.24 24" scale="6 6 6" cull_face="none" blend_src="one" blend_dest="constant_color" lighting="true" rotate_axis="0 1 0" rotate_deg_per_sec="-0.2" />
+<Object id="swirl" pos="0 -6 0" scale="10 1 10" cull_face="none" blend_src="src_color" blend_dest="src_alpha" lighting="true" rotate_axis="0 -1 0" rotate_deg_per_sec="0.5" col="#8E8E8E"/>
+<Object id="swirl" pos="0 -4 0" scale="10 1 10" cull_face="none" blend_src="src_color" blend_dest="src_alpha" lighting="true" rotate_axis="0 -1 0" rotate_deg_per_sec="2" col="#8E8E8E"/>
+<Object id="swirl" pos="0 -2 0" scale="10 1 10" cull_face="none" blend_src="src_color" blend_dest="src_alpha" lighting="true" rotate_axis="0 -1 0" rotate_deg_per_sec="3.5" col="#8E8E8E"/>
+<Object id="swirl" pos="0 0 0" scale="10 1 10" cull_face="none" blend_src="src_color" blend_dest="src_alpha" lighting="true" rotate_axis="0 -1 0" rotate_deg_per_sec="5" col="#8E8E8E"/>
+<Object id="swirl2" pos="0 70 0" scale="5 1 5" cull_face="none" blend_src="one_minus_dst_alpha" blend_dest="one_minus_src_alpha" lighting="true" rotate_axis="0 -1 0" rotate_deg_per_sec="5" col="#000000"/>
+
+<Particle image_id="drygrass" rate="1" count="2" loop="true" fade_in="0" fade_out="0" duration="10000" scale="0.5 0.5 0.5"
+pos="-8.15 6.5 -4.56"
+/>
+
+<Particle image_id="drygrass" rate="1" count="2" loop="true" fade_in="0" fade_out="0" duration="10000" scale="0.5 0.5 0.5"
+pos="-8.23 6.5 -3.29"
+/>
+
+<Particle image_id="drygrass" rate="1" count="2" loop="true" fade_in="0" fade_out="0" duration="10000" scale="0.5 0.5 0.5"
+pos="-7.13 6.5 -3.92"
+/>
+
+<Particle image_id="drygrass" rate="1" count="2" loop="true" fade_in="0" fade_out="0" duration="10000" scale="0.5 0.5 0.5"
+pos="-7.72 6.5 3.05"
+/>
+
+<Particle image_id="drygrass" rate="1" count="2" loop="true" fade_in="0" fade_out="0" duration="10000" scale="0.5 0.5 0.5"
+pos="-4.70 6.5 -7.88"
+/>
+
+</Room>
+</FireBoxRoom>
+</body>
+</html>
