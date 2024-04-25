@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--<meta name="theme-color" content="#000000">-->
+<title>Portfolio - Patricia Szarota</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/portfolio.css" charset="utf-8">
+<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+<script language="JavaScript" type="text/javascript" src="https://timigi.com/scripts/jquery-3.4.1.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+function checkElementLocation() {
+  var $window = $(window);
+  var bottom_of_window = $window.scrollTop() + $window.height() + 300;
+
+  $('.elem').each(function(i) {
+    var $that = $(this);
+    var bottom_of_object = $that.position().top + $that.outerHeight();
+
+
+    //if element is in viewport, add the animate class
+    if (bottom_of_window > bottom_of_object) {
+      $(this).addClass('fade-in');
+    }
+  });
+
+}
+// if in viewport, show the animation
+checkElementLocation();
+
+$(window).on('scroll', function() {
+  checkElementLocation();
+});
+</script>
+
+<style type="text/css">
+</style>
+
+</head>
+<body>
+
+<noscript>
+	Deze webpagina maakt gebruik van JavaScript. Sommige onderdelen kunnen mogelijk verkeerd worden weergeven.<br>
+	<a href="https://www.java.com/en/" target="_blank">Klik hier om JavaScript te downloaden.</a>
+</noscript>
+
+<div class="header-navbar">
+		<div class="dropdown">
+		  <div class="dropdown-icon"><img src="images/navbarIcon.png"/></div>
+		  <div class="dropdown-content">
+			<p><a href="#Introductie">Introductie</a></p>
+			<p><a href="#Webdesign">Webdesign</a></p>
+			<p><a href="#Videobewerking">Videobewerking</a></p>
+			<p><a href="#VisueelDesign">Visueel Design</a></p>
+		  </div>
+		</div>
+</div>
+
+<div id="Introductie" class="portfolioContents"> <!-- CONTENTS START -->
+
+	<div class="heroTop"> <!-- HERO TOP START -->
+	
+	<img class="corporateShapes" src="images/corporateShapes.png" style="width:20%;"/>
+	
+		<div class="heroTopWrapper-TOP">
+		
+		<div class="flexBlankWide"></div>
+		
+			<div class="heroTopWrapper-BOT">
+				<div class="heroTopContainerPROFILE">
+					<div class="heroTopName">Patricia Szarota</div>
+				</div>
+				<div style="height:5vh;"></div>
+				<div class="heroTopContainer" style="margin-bottom:10vh;">
+					<div class="heroTopText justifyText">
+<h3 style="text-align:center;">Gedreven | Betrouwbaar | Vastberaden</h3>
+Van&shy;af dag één een cre&shy;a&shy;tie&shy;ve ziel, met een aan&shy;ge&shy;bo&shy;ren affi&shy;ni&shy;teit voor tech&shy;no&shy;lo&shy;gie. Mijn le&shy;ven lang ben ik ge&shy;fa&shy;sci&shy;neerd door het ver&shy;mo&shy;gen van me&shy;dia om men&shy;sen te ra&shy;ken, en heb ik me onder&shy;ge&shy;dom&shy;p&shy;eld in de we&shy;reld van di&shy;gi&shy;ta&shy;le ex&shy;pressie, waar&shy;in ik een wa&shy;re passie heb ge&shy;von&shy;den.<br>
+<br>
+Door de ja&shy;ren heen heb ik met ver&shy;schillen&shy;de soft&shy;ware&shy;pakketten ge&shy;werkt, van illu&shy;stra&shy;tie tot video&shy;be&shy;werk&shy;ing en het ont&shy;wer&shy;pen van web&shy;sites en af&shy;beel&shy;ding&shy;en. Het is een reis ge&shy;weest die mijn passie alleen maar heeft aan&shy;ge&shy;wakkerd. Nu ben ik op zoek naar kan&shy;sen om mijn ex&shy;per&shy;ti&shy;se pro&shy;fessio&shy;neel in te zet&shy;ten, om sa&shy;men te wer&shy;ken aan pro&shy;jec&shy;ten die de gren&shy;zen van cre&shy;a&shy;tie&shy;ve ex&shy;pressie ver&shy;leggen.<br>
+<br>
+Dit port&shy;fo&shy;lio biedt een in&shy;kijk&shy;je in mijn re&shy;cen&shy;te werk, waar&shy;in ik mijn vaar&shy;dig&shy;he&shy;den en er&shy;va&shy;ring in me&shy;di&shy;a&shy;vorm&shy;ge&shy;ving ten&shy;toon&shy;spreid. Elk pro&shy;ject ver&shy;telt een ver&shy;haal, van gra&shy;fisch ont&shy;werp tot web&shy;de&shy;sign<!--, en illustreert mijn vermogen om complexe uitdagingen aan te gaan en unieke oplossingen te vinden-->. Be&shy;nieuwd naar meer? La&shy;ten we sa&shy;men de vol&shy;gende cre&shy;a&shy;tie&shy;ve reis be&shy;ginnen.<br>
+					</div>
+				</div>
+			</div>
+
+			<div class="heroTopWrapper-BOT profile">
+				<img class="profile" src="images/Patricia.png"/>
+			</div>
+
+		</div>
+
+	</div> <!-- HERO TOP END -->
+<br><br><br><br><br>
+<!-- INTERSTITIAL START -->
+<div class="interstitialWrapper">
+	<div class="interstitialFlex elem to-fade-in">
+		<div class="interstitial">
+			<div class="interstitialInner">
+				Bedreven in het werken met:<br>
+				<hr style="border:2px solid #60B660;">
+				<div class="interstitialFlex">
+					<div class="interstitialImage"><img class="interstitialImage" src="images/Adobe_Illustrator_CC_icon.svg"/><br>Illustrator</div>
+					<div class="interstitialImage"><img class="interstitialImage" src="images/Adobe_Photoshop_CC_icon.svg"/><br>Photoshop</div>
+					<div class="interstitialImage"><img class="interstitialImage" src="images/Adobe InDesign CC logo.svg"/><br>InDesign</div>
+					<div class="interstitialImage"><img class="interstitialImage" src="images/Adobe Premiere Pro CC logo.svg"/><br>Premiere</div>
+				</div>
+				<hr style="border:2px solid #60B660;">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- INTERSTITIAL END -->
+
+	<br id="Webdesign"><br><br><br><br>
+	
+	<div class="Showcase1"> <!-- WEBSITE SHOWCASE START -->
+	
+	<img class="corporateShapes-UD" src="images/corporateShapes-UD.png" style="width:20%;"/>
+	<img class="corporateShapes" src="images/corporateShapes2.png" style="width:20%;"/>
+	
+	<div class="showcaseTitlebar">
+				<div class="showcaseTitlebarHeader">
+					Webdesign
+				</div>
+				<div>&nbsp;</div>
+				<div class="showcaseTitlebarHeader2">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<div>&nbsp;</div>
+				<div class="showcaseTitlebarHeader2">&nbsp;&nbsp;</div>
+				<div>&nbsp;</div>
+	</div>
+		<div class="showcaseTitlebarSubtitle">
+			Ik streef er&shy;naar om boei&shy;en&shy;de di&shy;gi&shy;ta&shy;le pre&shy;sen&shy;ta&shy;ties te creëren die zo&shy;wel functio&shy;neel als es&shy;the&shy;tisch aan&shy;trekke&shy;lijk zijn. Met mijn kennis van HTML, CSS en wer&shy;ken in Word&shy;Press ont&shy;wikkel ik re&shy;spon&shy;sie&shy;ve web&shy;sites die per&shy;fect wor&shy;den weer&shy;ge&shy;ge&shy;ven op alle appa&shy;ra&shy;ten, van desk&shy;top&shy;com&shy;pu&shy;ters tot smart&shy;phones, en die een naad&shy;loze ge&shy;brui&shy;kers&shy;er&shy;va&shy;ring bie&shy;den voor el&shy;ke be&shy;zoe&shy;k&shy;er. <!--Mijn doel is om het verhaal en de visie van mijn klanten te vertalen naar een online platform dat indruk maakt en hun doelgroep boeit, waardoor ze zich kunnen onderscheiden in de digitale wereld.-->
+		</div>
+
+			<div class="showcaseFlex elem to-fade-in">
+				<div class="showcaseImageText justifyText">
+							<h2>Cultureel Drukwerk</h2>
+							Cul&shy;tu&shy;reel Druk&shy;werk is een kwa&shy;li&shy;teits&shy;ge&shy;rich&shy;te "hands-on" drukke&shy;r&shy;ij met een na&shy;druk op de cul&shy;tu&shy;re&shy;le sec&shy;tor.<br>
+							<br>
+							<button class="buttonCustom" type="button" onclick="window.open('http://cultureeldrukwerk.nl','_blank')" style="float:right;">Bekijk deze website</button>
+				</div>
+				<div class="showcaseImageContainer">
+					<img class="showcaseImage" src="images/website-cultureeldrukwerk.png"/><br>
+				</div>
+			</div>
+		<br><hr class="horizontal_rule"><br>
+			<div class="showcaseFlex elem to-fade-in">
+				<div class="showcaseImageContainer">
+					<img class="showcaseImage" src="images/website-fe-magazine.png"/><br>
+				</div>
+				<div class="showcaseImageText justifyText">
+					Een een­&shy;vou­&shy;di­ge web&shy;­site ge&shy;bouw­d voor FE-Ma­&shy;ga&shy;­zine, een tijd­&shy;schrift voor de or­&shy;ga&shy;­ni&shy;­sa&shy;­to&shy;­ren van fes&shy;­ti&shy;­vals & eve­&shy;ne&shy;men&shy;ten, met het doel om deze or&shy;ga&shy;ni&shy;sa&shy;to&shy;ren de mo&shy;ge&shy;lijk&shy;heid te ge&shy;ven om een&shy;vou&shy;dig con&shy;tact te leggen met FE-Ma&shy;ga&shy;zine.
+<br>
+							<br>
+							<button class="buttonCustom" type="button" onclick="window.open('http://fe-magazine.nl','_blank')" style="float:left;">Bekijk deze website</button>
+				</div>
+			</div>
+<!--		<br><hr class="horizontal_rule"><br>
+			<div class="showcaseFlex elem to-fade-in">
+				<div class="showcaseImageText justifyText">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sapien varius, tempor velit sit amet, condimentum est.<br>
+							<br>
+							<button class="buttonCustom" type="button" onclick="window.open('https://timigi.com/LOI/BPV/KALIBER%20MEDIA/JURIDISCHDRUKWERK/index.html','_blank')" style="float:right;">Bekijk deze website</button>
+				</div>
+				<div class="showcaseImageContainer">
+					<img class="showcaseImage" src="images/website-juridischdrukwerk.png"/><br>
+				</div>
+			</div> -->
+			
+			<br><br><br>
+			
+	</div> <!-- WEBSITE SHOWCASE END -->
+
+	<br id="Videobewerking"><br><br><br><br>
+
+	<div class="Showcase3"> <!-- VIDEO SHOWCASE START -->
+	
+	<img class="corporateShapes" src="images/corporateShapes3.png" style="width:20%;"/>
+	<img class="corporateShapes-UD" src="images/corporateShapes-UD2.png" style="width:20%;"/>
+	
+			<div class="showcaseTitlebar">
+				<div class="showcaseTitlebarHeaderBLU">
+					Videobewerking
+				</div>
+				<div>&nbsp;</div>
+				<div class="showcaseTitlebarHeader2BLU">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<div>&nbsp;</div>
+				<div class="showcaseTitlebarHeader2BLU">&nbsp;&nbsp;</div>
+				<div>&nbsp;</div>
+	</div>
+		<div class="showcaseTitlebarSubtitle">
+			Ik creëer ver&shy;fijn&shy;de vi&shy;de&shy;o&shy;clips, dy&shy;na&shy;mi&shy;sche pro&shy;mo&shy;tie&shy;mon&shy;ta&shy;ges en nog veel meer. Met toe&shy;wij&shy;ding en passie knijp ik het ui&shy;ter&shy;ste uit elk stuk&shy;je ma&shy;te&shy;ri&shy;aal dat ik krijg aan&shy;ge&shy;reikt. Mijn vi&shy;deo's zijn ont&shy;wor&shy;pen om op te vallen, zon&shy;der de kijker te over&shy;wel&shy;di&shy;gen met een over&shy;vloed aan flit&shy;s&shy;en&shy;de effect&shy;en.
+		</div>
+
+			<div class="showcaseFlex elem to-fade-in">
+					<div class="showcaseVideoContainer">
+						<iframe class="showcaseVideo" src="https://www.youtube.com/embed/G5UwdX2Wl7s" title="Vergader Jaargids 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div class="showcaseVideoText justifyText">
+							Een in&shy;for&shy;ma&shy;tief re&shy;cla&shy;me&shy;spot&shy;je voor de jaar&shy;gids van Ver&shy;ga&shy;der&shy;adres, een ad&shy;ver&shy;teer&shy;der van ver&shy;ga&shy;der&shy;lo&shy;ca&shy;ties ge&shy;richt op aller&shy;lij soorten be&shy;drij&shy;ven & in&shy;stan&shy;ties in Ne&shy;der&shy;land.
+					</div>
+			</div>
+			<br><br>
+			<div class="showcaseFlex elem to-fade-in">
+					<div class="showcaseVideoText justifyText">
+							Een kort-maar-krachtige aan&shy;kon&shy;diging van het nieuwste exemplaar van PV-Magazine.
+					</div>
+					<div class="showcaseVideoContainer">
+						<iframe class="showcaseVideo" src="https://www.youtube.com/embed/We6g8t0HSWA" title="PV-Magazine maart 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+			</div>
+<!--			<br><br>
+			<div class="showcaseFlex elem to-fade-in">
+					<div class="showcaseVideoContainer">
+						<iframe class="showcaseVideo" src="https://www.youtube.com/embed/LUK-jzdH2P4" title="Slot Schaesberg Promofilm 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div class="showcaseVideoText justifyText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sapien varius, tempor velit sit amet, condimentum est.
+					</div>
+			</div>-->
+	
+	</div> <!-- VIDEO SHOWCASE END -->
+
+	<br id="VisueelDesign"><br><br><br><br>
+
+	<div class="Showcase1"> <!-- LOGO SHOWCASE START -->
+
+	<img class="corporateShapes-UD" src="images/corporateShapes-UD3.png" style="width:20%;"/>
+
+			<div class="showcaseTitlebar">
+				<div class="showcaseTitlebarHeader">
+					Visueel Design
+				</div>
+				<div>&nbsp;</div>
+				<div class="showcaseTitlebarHeader2">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<div>&nbsp;</div>
+				<div class="showcaseTitlebarHeader2">&nbsp;&nbsp;</div>
+				<div>&nbsp;</div>
+	</div>
+		<div class="showcaseTitlebarSubtitle">
+			Als visueel ontwerper werk ik met een moderne less-is-more methodiek. Ik geloof in de kracht van eenvoud en minimalisme om boodschappen helder en impactvol over te brengen. Mijn ontwerpen zijn vooral gericht op het creëren van een harmonieuze gebruikerservaring.
+		</div>
+
+			<div class="showcaseFlex elem to-fade-in">
+				<div class="showcaseImageContainer">
+					<img class="showcaseImage" src="images/CD-Folder.png" style="max-height:517px"/><br>
+				</div>
+				<div style="width:5%;"></div>
+				<div class="showcaseImageContainer">
+					<img class="showcaseImage" src="images/CD-Folder-2-A4.png" style="max-height:517px"/><br>
+				</div>
+			</div>
+			<br>
+			<div class="showcaseFlex elem to-fade-in">
+				<div class="showcaseImageContainer">
+					<img class="showcaseImage" src="images/PrintboysAd-PosterConcept1_page-0001.jpg" style="max-height:671px;"/><br>
+				</div>
+				<div style="width:5%;"></div>
+				<div class="showcaseImageContainer">
+					<img class="showcaseImage" src="images/PrintboysAd-Spandoeken-Concept2_page-0001.jpg" style="max-height:671px;"/><br>
+				</div>
+			</div>
+			<br>
+			<div class="showcaseFlex elem to-fade-in">
+				<div class="showcaseImageContainer">
+					<img class="showcaseImage" src="images/PrintboysIconografie.png"/><br>
+				</div>
+			</div>
+	
+	</div> <!-- LOGO SHOWCASE END -->
+
+</div> <!-- CONTENTS END -->
+
+<!--
+<span style="color:red;font-weight:bold;">PLACEHOLDER</span>
+-->
+
+</body>
+</html>
